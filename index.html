@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mail to Calendar — Extensión de Chrome</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: #202124;
+      background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 60%, #ceead6 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+    .card {
+      max-width: 640px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(32, 33, 36, 0.18);
+      padding: 40px 44px;
+      text-align: center;
+    }
+    .card img { width: 96px; height: 96px; margin-bottom: 20px; }
+    h1 { font-size: 32px; margin-bottom: 10px; }
+    .tagline { font-size: 18px; color: #5f6368; line-height: 1.5; margin-bottom: 24px; }
+    .steps {
+      text-align: left;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 2.1;
+      margin-bottom: 28px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 4px 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .links a.primary { background: #1a73e8; color: #fff; }
+    .links a.secondary { background: #f1f3f4; color: #1a73e8; }
+    .donate { margin-top: 26px; font-size: 14px; color: #5f6368; }
+    footer { margin-top: 18px; font-size: 13px; color: #80868b; }
+    footer a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="icon.svg" alt="Logo de Mail to Calendar" />
+    <h1>Mail to Calendar</h1>
+    <p class="tagline">
+      Extensión de Google Chrome que agenda una reunión en Google Calendar
+      a partir del correo que tengas abierto en Gmail.
+    </p>
+
+    <div class="steps">
+      ✉️ Lee el correo abierto en Gmail<br />
+      🔍 Detecta la fecha y la hora en el texto<br />
+      📅 Crea el evento en Google Calendar con un clic
+    </div>
+
+    <div class="links">
+      <a class="primary" href="https://github.com/EduardoAcunaCoronado/mail-to-calendar">Ver código en GitHub</a>
+      <a class="secondary" href="privacy-policy.html">Política de privacidad</a>
+    </div>
+
+    <p class="donate">💙 ¿Te resulta útil? Acepto donaciones por Bizum: <strong>651 540 128</strong></p>
+
+    <footer>
+      Contacto: <a href="mailto:edu191191@gmail.com">edu191191@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
