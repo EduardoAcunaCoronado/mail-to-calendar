@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidad — Mail to Calendar</title>
+  <style>
+    body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #202124;
+    }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 20px; margin-top: 32px; }
+    .updated { color: #5f6368; font-size: 14px; }
+    ul { padding-left: 22px; }
+    a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+  <h1>Política de Privacidad — Mail to Calendar</h1>
+  <p class="updated">Última actualización: 9 de julio de 2026</p>
+
+  <p>
+    <strong>Mail to Calendar</strong> es una extensión de Google Chrome que permite crear
+    eventos de Google Calendar a partir del correo abierto en Gmail. Esta política describe
+    qué datos trata la extensión y cómo lo hace.
+  </p>
+
+  <h2>Qué datos se acceden</h2>
+  <p>
+    Cuando el usuario pulsa el icono de la extensión con un correo abierto en Gmail
+    (<code>mail.google.com</code>), la extensión lee de esa pestaña:
+  </p>
+  <ul>
+    <li>El asunto del correo abierto.</li>
+    <li>El cuerpo (texto) del correo abierto.</li>
+    <li>El nombre y la dirección de correo del remitente y de los participantes del hilo.</li>
+  </ul>
+  <p>
+    Estos datos se usan exclusivamente para prellenar el formulario del evento
+    (título, invitados, descripción) y para detectar fechas y horas mencionadas en el texto.
+  </p>
+
+  <h2>Cómo se tratan los datos</h2>
+  <ul>
+    <li><strong>Todo el procesamiento ocurre localmente en tu navegador.</strong> La extensión no tiene servidores propios y no envía ningún dato al desarrollador ni a terceros.</li>
+    <li><strong>No se almacena nada.</strong> La extensión no guarda datos en disco, ni usa <code>chrome.storage</code>, cookies ni identificadores; los datos leídos existen solo mientras el popup está abierto.</li>
+    <li><strong>No hay analítica ni rastreo</strong> de ningún tipo.</li>
+    <li>La extensión solo actúa cuando el usuario pulsa su icono; no lee correos en segundo plano.</li>
+  </ul>
+
+  <h2>Qué se envía a Google Calendar</h2>
+  <p>
+    Al pulsar «Crear evento en Google Calendar», la extensión abre una pestaña de
+    <code>calendar.google.com</code> con los datos del formulario (título, fecha, invitados y
+    descripción) como parámetros de la URL de creación de eventos de Google. El evento solo se
+    crea si el usuario lo confirma en Google Calendar. Este intercambio ocurre directamente
+    entre tu navegador y Google, y está sujeto a la
+    <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.
+  </p>
+
+  <h2>Venta o cesión de datos</h2>
+  <p>
+    No vendemos, alquilamos ni cedemos datos de usuario a terceros. No usamos los datos con
+    fines distintos a la finalidad única de la extensión: crear eventos de calendario a partir
+    del correo abierto.
+  </p>
+
+  <h2>Permisos que solicita la extensión</h2>
+  <ul>
+    <li><code>activeTab</code> — acceder a la pestaña activa de Gmail solo cuando pulsas el icono.</li>
+    <li><code>scripting</code> — inyectar el script de lectura si Gmail se abrió antes de instalar la extensión.</li>
+    <li>Acceso al host <code>https://mail.google.com/*</code> — leer el correo abierto en Gmail.</li>
+  </ul>
+
+  <h2>Cambios en esta política</h2>
+  <p>
+    Si esta política cambia, la nueva versión se publicará en esta misma dirección y se
+    actualizará la fecha de «Última actualización».
+  </p>
+
+  <h2>Contacto</h2>
+  <p>
+    Para cualquier consulta sobre privacidad, escribe a
+    <a href="mailto:edu191191@gmail.com">edu191191@gmail.com</a>.
+  </p>
+</body>
+</html>
