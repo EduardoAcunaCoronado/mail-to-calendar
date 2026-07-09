@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Captura para Chrome Web Store</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      width: 1280px;
+      height: 800px;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 60%, #ceead6 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 70px;
+      overflow: hidden;
+    }
+
+    /* Lado izquierdo: marca */
+    .brand { max-width: 430px; }
+    .brand img { width: 120px; height: 120px; margin-bottom: 28px; }
+    .brand h1 { font-size: 42px; font-weight: 700; color: #202124; line-height: 1.2; margin-bottom: 16px; }
+    .brand p { font-size: 20px; color: #5f6368; line-height: 1.5; }
+    .brand .steps { margin-top: 28px; font-size: 17px; color: #202124; line-height: 2; }
+
+    /* Lado derecho: réplica del popup */
+    .popup {
+      width: 360px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(32, 33, 36, 0.25);
+      padding: 14px 16px 16px;
+      font-size: 13px;
+      color: #202124;
+    }
+    .popup h2 {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      font-size: 16px; font-weight: 600; margin-bottom: 12px;
+    }
+    .popup h2 img { width: 22px; height: 22px; }
+    .popup form { display: flex; flex-direction: column; gap: 10px; }
+    .popup label { display: flex; flex-direction: column; gap: 4px; font-weight: 500; color: #5f6368; flex: 1; }
+    .popup input, .popup select, .popup textarea {
+      font: inherit; color: #202124; padding: 6px 8px;
+      border: 1px solid #dadce0; border-radius: 6px; width: 100%;
+    }
+    .popup .row { display: flex; gap: 10px; }
+    .popup .hint { font-size: 12px; color: #188038; line-height: 1.4; }
+    .popup button {
+      font: inherit; font-weight: 600; color: #fff; background: #1a73e8;
+      border: none; border-radius: 6px; padding: 9px; margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="brand">
+    <img src="../icon.svg" alt="" />
+    <h1>Mail to Calendar</h1>
+    <p>Agenda una reunión en Google Calendar a partir del correo que tengas abierto en Gmail.</p>
+    <div class="steps">
+      ✉️ Lee el correo abierto<br />
+      🔍 Detecta fecha y hora en el texto<br />
+      📅 Crea el evento con un clic
+    </div>
+  </div>
+
+  <div class="popup">
+    <h2><img src="../icon.svg" alt="" /> Agendar reunión</h2>
+    <form>
+      <label>Título
+        <input type="text" value="Reunión de seguimiento — Proyecto Aurora" />
+      </label>
+      <div class="row">
+        <label>Fecha <input type="date" value="2026-07-15" /></label>
+        <label>Hora <input type="time" value="10:30" /></label>
+      </div>
+      <div class="row">
+        <label>Duración
+          <select><option>1 hora</option></select>
+        </label>
+      </div>
+      <label>Invitados (separados por coma)
+        <input type="text" value="laura.perez@ejemplo.com" />
+      </label>
+      <label>Descripción
+        <textarea rows="4">Creado desde el correo de Laura Pérez:
+
+Hola, ¿te viene bien reunirnos el 15 de julio a las 10:30 para revisar el avance del proyecto?</textarea>
+      </label>
+      <p class="hint">✓ Se detectó la fecha y la hora en el correo. Revísala antes de crear el evento.</p>
+      <button type="button">Crear evento en Google Calendar</button>
+    </form>
+  </div>
+</body>
+</html>
