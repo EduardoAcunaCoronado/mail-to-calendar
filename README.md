@@ -32,7 +32,7 @@ Extensión de Google Chrome que agenda una reunión en Google Calendar a partir 
 
 ## Donaciones
 
-Si la extensión te resulta útil, acepto donaciones por **Bizum**: `651 540 128`. ¡Gracias! 💙
+Si la extensión te resulta útil, acepto donaciones por **Bizum**: `+34 651 540 128`. ¡Gracias! 💙
 
 ## Limitaciones
 
