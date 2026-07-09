@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agendar reunión</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app">
+    <h1><img src="icon48.png" alt="" /> Agendar reunión</h1>
+
+    <div id="status" class="status hidden"></div>
+
+    <form id="form" class="hidden">
+      <label>
+        Título
+        <input type="text" id="title" required />
+      </label>
+
+      <div class="row">
+        <label>
+          Fecha
+          <input type="date" id="date" required />
+        </label>
+        <label>
+          Hora
+          <input type="time" id="time" required />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Duración
+          <select id="duration">
+            <option value="30">30 min</option>
+            <option value="60" selected>1 hora</option>
+            <option value="90">1,5 horas</option>
+            <option value="120">2 horas</option>
+          </select>
+        </label>
+      </div>
+
+      <label>
+        Invitados (separados por coma)
+        <input type="text" id="guests" placeholder="correo@ejemplo.com" />
+      </label>
+
+      <label>
+        Descripción
+        <textarea id="description" rows="4"></textarea>
+      </label>
+
+      <p id="hint" class="hint hidden"></p>
+
+      <button type="submit" id="create">Crear evento en Google Calendar</button>
+    </form>
+
+    <p class="donate">💙 ¿Te resulta útil? Acepto donaciones por Bizum: <strong>651 540 128</strong></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
